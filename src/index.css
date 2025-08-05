@@ -81,4 +81,36 @@
   .text-mobile-center {
     @apply text-center sm:text-left lg:text-center;
   }
+  
+  /* Hide scrollbar for stories */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Instagram-like animations */
+  .like-animation {
+    animation: likePop 0.3s ease-in-out;
+  }
+  
+  @keyframes likePop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Story ring animation */
+  .story-ring {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    animation: storyRotate 2s linear infinite;
+  }
+  
+  @keyframes storyRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
 }
