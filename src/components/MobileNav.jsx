@@ -28,10 +28,9 @@ const MobileNav = () => {
 
   const navigation = [
     { name: 'Home', href: '/', icon: Home },
-    { name: 'Challenges', href: '/challenges', icon: Trophy },
+    { name: 'Sports', href: '/challenges', icon: Trophy },
     { name: 'Community', href: '/community', icon: Users },
-    { name: 'Marketplace', href: '/marketplace', icon: ShoppingBag },
-    { name: 'Stream', href: '/stream', icon: Video },
+    { name: 'Shop', href: '/marketplace', icon: ShoppingBag },
     { name: 'Profile', href: '/profile', icon: User },
   ]
 
