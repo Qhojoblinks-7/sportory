@@ -10,9 +10,11 @@ import {
   User, 
   Menu, 
   X,
-  LogOut
+  LogOut,
+  Settings
 } from 'lucide-react'
 import SupportUs from './SupportUs'
+import MobileNav from './MobileNav'
 
 const Layout = ({ children }) => {
   const { user, logout } = useAuth()
@@ -79,6 +81,13 @@ const Layout = ({ children }) => {
                     />
                     <span className="hidden sm:block">{user.name}</span>
                   </Link>
+                  <Link
+                    to="/settings"
+                    className="p-2 text-text hover:text-primary transition-colors"
+                    title="Settings"
+                  >
+                    <Settings size={20} />
+                  </Link>
                   <button
                     onClick={logout}
                     className="p-2 text-text hover:text-primary transition-colors"
@@ -142,7 +151,7 @@ const Layout = ({ children }) => {
       </main>
 
       {/* Footer */}
-      <footer className="glass border-t border-white/20 mt-16">
+      <footer className="glass border-t border-white/20 mt-16 mb-20 md:mb-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Brand */}
@@ -188,6 +197,9 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </footer>
+
+      {/* Mobile Navigation */}
+      <MobileNav />
     </div>
   )
 }
