@@ -11,7 +11,9 @@ import {
   Menu, 
   X,
   LogOut,
-  Settings
+  Settings,
+  Target,
+  Building
 } from 'lucide-react'
 import SupportUs from './SupportUs'
 import MobileNav from './MobileNav'
@@ -23,10 +25,11 @@ const Layout = ({ children }) => {
 
   const navigation = [
     { name: 'Home', href: '/', icon: Home },
-    { name: 'Challenges', href: '/challenges', icon: Trophy },
+    { name: 'Sports', href: '/challenges', icon: Trophy },
     { name: 'Community', href: '/community', icon: Users },
-    { name: 'Marketplace', href: '/marketplace', icon: ShoppingBag },
-    { name: 'Live Stream', href: '/stream', icon: Video },
+    { name: 'Talent', href: '/talent-discovery', icon: Target },
+    { name: 'Partners', href: '/partner-dashboard', icon: Building },
+    { name: 'Shop', href: '/marketplace', icon: ShoppingBag },
   ]
 
   const isActive = (path) => location.pathname === path

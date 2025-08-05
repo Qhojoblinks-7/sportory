@@ -5,8 +5,10 @@ import {
   Trophy, 
   Users, 
   ShoppingBag, 
-  Video,
-  User
+  Video, 
+  User,
+  Target,
+  Building
 } from 'lucide-react'
 
 const MobileNav = () => {
@@ -30,6 +32,8 @@ const MobileNav = () => {
     { name: 'Home', href: '/', icon: Home },
     { name: 'Sports', href: '/challenges', icon: Trophy },
     { name: 'Community', href: '/community', icon: Users },
+    { name: 'Talent', href: '/talent-discovery', icon: Target },
+    { name: 'Partners', href: '/partner-dashboard', icon: Building },
     { name: 'Shop', href: '/marketplace', icon: ShoppingBag },
     { name: 'Profile', href: '/profile', icon: User },
   ]
